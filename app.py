@@ -26,7 +26,7 @@ def process_msg(msg):
     response=""
     if msg=="hi" or msg=="hello" or msg=="Hello" or msg=="Hi":
         response="Hello, welcome to the stock market bot!!"
-        response += "\nEnter the symbol of stock for wich you want info as : sym: <symbol>"
+        response += "\n\nEnter the symbol of stock for wich you want info as : sym: <symbol>"
 
     
     elif 'sym:' in msg:
@@ -38,7 +38,8 @@ def process_msg(msg):
             
     else:
         response="Please type hi to get started."
-    
+    # if (msg=="I love you"):
+    #     response="I Love You too"
     return response    
 
 
